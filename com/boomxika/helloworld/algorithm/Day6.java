@@ -25,11 +25,17 @@ package com.boomxika.helloworld.algorithm;
 public class Day6 {
 
     public static void main(String[] args) {
+        System.out.println(3/2);
         System.out.println(5/2);
+        System.out.println(1/2);
+        int []nums = {1,3,5,6};
+        int target = 5;
+        searchInsert(nums, target);
     }
 
-    public int searchInsert(int[] nums, int target) {
+    public static int searchInsert(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
+        System.out.println(right);
         while (left <= right) {
             int mid = (left + right) / 2;
             if (nums[mid] == target) {
